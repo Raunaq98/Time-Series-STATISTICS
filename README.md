@@ -38,6 +38,8 @@ For example, in the Lynx data, if you catch more lynx in one year, you will catc
                       both observations are correlated to to observations at other
                       time spots.
                       Example : today's stock price is correlated to yeterday's and yesterday's
-                                 is correlated to the day before yesterday's. PACF of yesterday is
-                                 the real correlation between today and yesterday after taking out 
+                                 is correlated to the day before yesterday's. PACF of today and yesterday 
+                                 is the real correlation between today and yesterday after taking out 
                                  the influence of day before yesterday's.
+
+            Durbin-Watson Test 
