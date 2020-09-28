@@ -49,3 +49,9 @@ For example, in the Lynx data, if you catch more lynx in one year, you will catc
                       Used for the Auto Regressive ( AR ) part of the analysis.           
 
             Durbin-Watson Test 
+
+# Moving Average (MA) and Auto Regressive (AR)
+
+Pure AR Models - Depends on the lagged values of the data you are modeling to make forecasts. The moving-average model specifies that the output variable depends linearly on the current and various past values of a stochastic (imperfectly predictable) term.
+
+Pure MA Models - Depends on the errors(residuals) of the previous forecasts you made to make current forecasts. The autoregressive model specifies that the output variable depends linearly on its own previous values and on a stochastic term (an imperfectly predictable term); thus the model is in the form of a stochastic difference equation 
