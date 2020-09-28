@@ -17,3 +17,27 @@ Non-stationary data should be first converted into stationary data (for example 
 ***Seasonality*** is a general systematic linear or (most often) nonlinear component that changes over time and does repeat.
 
 ***Trend*** a general systematic linear or (most often) nonlinear component that changes over time and does not repeat
+
+# Stationarity
+
+If the data lacks stationarity, transformations are need to be done to make it stationary.
+
+
+# Autocorrelation
+
+Just as correlation measures the extent of a linear relationship between two variables, autocorrelation measures the linear relationship between lagged values of a time series. It tells us whether the  **previous observations influence the recent ones.**
+
+For example, in the Lynx data, if you catch more lynx in one year, you will catch less in the next year due to lower population.
+
+            acf() = Observes correlation values between current time spot and 
+                     previous time spots.
+                     Example : independent correlation between todays's stock price and yesterday's 
+                                and then today's and day before yesterday's
+                     
+            pacf() = Observes the correlation values between two time spots given that
+                      both observations are correlated to to observations at other
+                      time spots.
+                      Example : today's stock price is correlated to yeterday's and yesterday's
+                                 is correlated to the day before yesterday's. PACF of yesterday is
+                                 the real correlation between today and yesterday after taking out 
+                                 the influence of day before yesterday's.
