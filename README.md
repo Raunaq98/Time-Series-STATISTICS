@@ -31,15 +31,21 @@ For example, in the Lynx data, if you catch more lynx in one year, you will catc
 
             acf() = Observes correlation values between current time spot and 
                      previous time spots.
+                     
                      Example : independent correlation between todays's stock price and yesterday's 
                                 and then today's and day before yesterday's
+                             
+                     Used for the Moving Average ( MA ) part of the analysis.        
                      
             pacf() = Observes the correlation values between two time spots given that
                       both observations are correlated to to observations at other
                       time spots.
+                      
                       Example : today's stock price is correlated to yeterday's and yesterday's
                                  is correlated to the day before yesterday's. PACF of today and yesterday 
                                  is the real correlation between today and yesterday after taking out 
                                  the influence of day before yesterday's.
+                                 
+                      Used for the Auto Regressive ( AR ) part of the analysis.           
 
             Durbin-Watson Test 
